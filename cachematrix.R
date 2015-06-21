@@ -23,7 +23,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Request and return the inverse of a makeCacheMatrix if it is cached,
 ## otherwise calculate the inverse and cache the result.
 
-cacheSolve <- function(x, ...) {
 cacheSolve <- function(x) {
     v <- x$getinv()
     if(!is.null(v)) {
